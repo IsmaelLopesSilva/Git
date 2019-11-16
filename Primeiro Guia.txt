@@ -1,0 +1,79 @@
+1º Criei um novo repositório no Github, chamado [Git];
+
+2º Criei no drive local um repositório, chamado [Git];
+
+3º Dentro do repositório [Git] local, usando o Git Bash:
+Git$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+4º Esse repositório local ainda não está sob o controle de versão do Git;
+
+5º Iniciar o controle de versão
+Git$ git init
+Initialized empty Git repository in D:/GitHub/Git/.git/
+
+Git$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+6º Verificar se o repositório [Git] local está conectado remotamente com algum repositório do Github:
+Git$ git remote
+Obs: nenhuma conexão remota foi encontrada
+
+7º Conectar o repositório [Git] local com o [Git] remoto no Github:
+Git$ git remote add origin https://github.com/IsmaelLopesSilva/Git.git
+Obs: origin será o repositório do Github
+
+Git$ git remote
+origin
+
+8º Criar o primeiro arquivo dentro do repositório [Git] local e depois empurrá-lo para o [Git] no Github:
+Git$ touch 'Primeiro Guia.txt'
+
+Git$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Primeiro Guia.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+9º Adicionar o primeiro arquivo no controle de versão:
+Git$ git add .
+
+Git$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Primeiro Guia.txt
+
+10º Adicionar um comite para essa transação:
+Git$ git commit -m "Adicionei o primeiro arquivo"
+[master (root-commit) f62ed7e] Adicionei o primeiro arquivo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Primeiro Guia.txt
+
+Git$ git status
+On branch master
+nothing to commit, working tree clean
+
+11º Empurrar para o repositório [Git] no Github:
+Git$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 245.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/IsmaelLopesSilva/Git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+12º Verificar que ambos repositórios estão atualizados.
