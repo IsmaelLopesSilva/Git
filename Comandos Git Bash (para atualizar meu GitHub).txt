@@ -1,0 +1,13 @@
+1) Rodar o Git Bash
+2) Diretório que inicia é /D/GitHub
+3) Usar comando 'ls' para ver os diretórios filho
+4) Por exemplo, quero atualizar o diretório 'Eletronica' porque adicionei um arquivo
+5) Usar o comando 'cd Eletronica'
+6) Observe que nesse diretório o Git controla a versão, porque aparece (master)
+7) Usar o comando 'git status'
+8) Usar o comando 'git add .'
+9) Usar o comando 'git status'(verificar o processo)
+10) Usar o comando 'git commit -m "adicionei um arquivo"'
+11) Usar o comando 'git status'(verificar o processo)
+12) Usar o comando 'git push -u origin master' (arquivo será uploaded)
+13) Usar o comando 'git status'(verificar o processo)
